@@ -1,5 +1,7 @@
 module Spree
   class Calculator::AdvancedFlatPercent < Spree::Calculator
+    attr_accessible :preferred_flat_percent, :preferred_based_on_cost_price
+    
     preference :flat_percent, :decimal, :default => 0
     preference :based_on_cost_price, :boolean, :default => false
 
