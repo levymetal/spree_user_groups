@@ -3,7 +3,7 @@ class Spree::UserGroup < ActiveRecord::Base
   has_many :user_groups_variants
   has_many :variants, :through => :user_groups_variants
   
-  attr_accessible :name
+  #attr_accessible :name
   validates :name, :presence => true
   
   calculated_adjustments
